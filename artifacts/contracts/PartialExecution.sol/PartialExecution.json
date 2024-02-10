@@ -1,0 +1,10 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "PartialExecution",
+  "sourceName": "contracts/PartialExecution.sol",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212208719989c5ed978a47b61ff1f0e8e3ed78588c890e2628394e12a2c4e8ce1373a64736f6c63430008180033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212208719989c5ed978a47b61ff1f0e8e3ed78588c890e2628394e12a2c4e8ce1373a64736f6c63430008180033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

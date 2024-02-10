@@ -1,0 +1,49 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "EventfulTokenPairListing",
+  "sourceName": "contracts/TokenPairListing.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "baseToken",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "secondaryToken",
+          "type": "address"
+        }
+      ],
+      "name": "TokenPairDisabled",
+      "type": "event"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "baseToken",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "address",
+          "name": "secondaryToken",
+          "type": "address"
+        }
+      ],
+      "name": "TokenPairEnabled",
+      "type": "event"
+    }
+  ],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea26469706673582212202f2cd1d4ed348da344fc53bf7200eeebde5beab85a17a17432d16d76fa8bde6864736f6c63430008180033",
+  "deployedBytecode": "0x6080604052600080fdfea26469706673582212202f2cd1d4ed348da344fc53bf7200eeebde5beab85a17a17432d16d76fa8bde6864736f6c63430008180033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

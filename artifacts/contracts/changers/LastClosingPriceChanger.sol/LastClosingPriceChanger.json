@@ -1,0 +1,109 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "LastClosingPriceChanger",
+  "sourceName": "contracts/changers/LastClosingPriceChanger.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract TokenPairListing",
+          "name": "_tokenPairListing",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_baseToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_secondaryToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_price",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "baseToken",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "execute",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "newMaxBlocksForTick",
+      "outputs": [
+        {
+          "internalType": "uint64",
+          "name": "",
+          "type": "uint64"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "price",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "secondaryToken",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "tokenPairListing",
+      "outputs": [
+        {
+          "internalType": "contract TokenPairListing",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b506040516102a53803806102a583398101604081905261002f9161008c565b600080546001600160a01b03199081166001600160a01b03968716179091556001805482169486169490941790935560028054909316919093161790556003556100df565b6001600160a01b038116811461008957600080fd5b50565b600080600080608085870312156100a257600080fd5b84516100ad81610074565b60208601519094506100be81610074565b60408601519093506100cf81610074565b6060959095015193969295505050565b6101b7806100ee6000396000f3fe608060405234801561001057600080fd5b50600436106100625760003560e01c806333fe4f7514610067578063614619541461009757806377756010146100a1578063a035b1fe146100ce578063c55dae63146100e5578063f4eb08db146100f8575b600080fd5b60005461007a906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b61009f61010b565b005b6004546100b59067ffffffffffffffff1681565b60405167ffffffffffffffff909116815260200161008e565b6100d760035481565b60405190815260200161008e565b60015461007a906001600160a01b031681565b60025461007a906001600160a01b031681565b6000546001546002546003546040516314a0986160e21b81526001600160a01b03938416600482015291831660248301526044820152911690635282618490606401600060405180830381600087803b15801561016757600080fd5b505af115801561017b573d6000803e3d6000fd5b5050505056fea2646970667358221220bb2dfc041c1d50460a5bc152a49b351a277826c921c177e13c5372580c56d72c64736f6c63430008180033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100625760003560e01c806333fe4f7514610067578063614619541461009757806377756010146100a1578063a035b1fe146100ce578063c55dae63146100e5578063f4eb08db146100f8575b600080fd5b60005461007a906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b61009f61010b565b005b6004546100b59067ffffffffffffffff1681565b60405167ffffffffffffffff909116815260200161008e565b6100d760035481565b60405190815260200161008e565b60015461007a906001600160a01b031681565b60025461007a906001600160a01b031681565b6000546001546002546003546040516314a0986160e21b81526001600160a01b03938416600482015291831660248301526044820152911690635282618490606401600060405180830381600087803b15801561016757600080fd5b505af115801561017b573d6000803e3d6000fd5b5050505056fea2646970667358221220bb2dfc041c1d50460a5bc152a49b351a277826c921c177e13c5372580c56d72c64736f6c63430008180033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

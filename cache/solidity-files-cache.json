@@ -1,0 +1,3312 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/divmarley/Desktop/swap/contracts/Blockability/Blockable.sol": {
+      "lastModificationDate": 1707469986746,
+      "contentHash": "5ea2de582800bcbdb6fd65252e8322d4",
+      "sourceName": "contracts/Blockability/Blockable.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/upgrades/contracts/Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "Blockable"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/upgrades/contracts/Initializable.sol": {
+      "lastModificationDate": 1707420132961,
+      "contentHash": "d94f03571d5b92a2dbcba62743cbf5cc",
+      "sourceName": "@openzeppelin/upgrades/contracts/Initializable.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "Initializable"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Governance/BlockableGovernor.sol": {
+      "lastModificationDate": 1707469950631,
+      "contentHash": "9e0ccbe2503c001a6d5d948fa97b6990",
+      "sourceName": "contracts/Governance/BlockableGovernor.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Governor.sol",
+        "../Blockability/Blockable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "BlockableGovernor"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Governance/Governor.sol": {
+      "lastModificationDate": 1707293838370,
+      "contentHash": "6e296e366902b73b3ca0d9846928c688",
+      "sourceName": "contracts/Governance/Governor.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+        "./ChangeContract.sol",
+        "./IGovernor.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "Governor"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Governance/ChangeContract.sol": {
+      "lastModificationDate": 1707291068916,
+      "contentHash": "debf06ed7db6d1605b6ecd8ecf3174d1",
+      "sourceName": "contracts/Governance/ChangeContract.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "ChangeContract"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Governance/IGovernor.sol": {
+      "lastModificationDate": 1707291078649,
+      "contentHash": "072d7c4ca6946a9546a2dcbf999dca0c",
+      "sourceName": "contracts/Governance/IGovernor.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ChangeContract.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "IGovernor"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
+      "lastModificationDate": 1707419177584,
+      "contentHash": "d3c790edc9ccf808a17c5a6cd13614fd",
+      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../utils/Context.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Ownable"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/contracts/utils/ReentrancyGuard.sol": {
+      "lastModificationDate": 1707479469434,
+      "contentHash": "4317f6cede176f0973dfe3644e820d56",
+      "sourceName": "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "ReentrancyGuard"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/contracts/utils/Context.sol": {
+      "lastModificationDate": 1707419176980,
+      "contentHash": "67bfbc07588eb8683b3fd8f6f909563e",
+      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Context"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
+      "lastModificationDate": 1707419177165,
+      "contentHash": "c6375ef25e84c90b3d15f9ec4eef218f",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IERC20.sol",
+        "./extensions/IERC20Metadata.sol",
+        "../../utils/Context.sol",
+        "../../interfaces/draft-IERC6093.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
+      "lastModificationDate": 1707155527666,
+      "contentHash": "5517c8678c18eb1a8ba58810e7ca39ca",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/contracts/interfaces/draft-IERC6093.sol": {
+      "lastModificationDate": 1707155527656,
+      "contentHash": "4aefc698f77ecbace7f401257dfe182d",
+      "sourceName": "@openzeppelin/contracts/interfaces/draft-IERC6093.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC1155Errors",
+        "IERC20Errors",
+        "IERC721Errors"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
+      "lastModificationDate": 1707155527667,
+      "contentHash": "4c02fa6f7ae7b6c289cef80424f0c875",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IERC20Metadata"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/libs/SafeTransfer.sol": {
+      "lastModificationDate": 1707290549093,
+      "contentHash": "5e9f25e84b0b9a225a6836965dccdd89",
+      "sourceName": "contracts/libs/SafeTransfer.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "SafeTransfer"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/libs/MoCExchangeLib.sol": {
+      "lastModificationDate": 1707333008476,
+      "contentHash": "07142b17f01897f266203cc8caa6b758",
+      "sourceName": "contracts/libs/MoCExchangeLib.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/math/Math.sol",
+        "../CommissionManager.sol",
+        "../interface/IPriceProvider.sol",
+        "./SafeTransfer.sol",
+        "./TickState.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "MoCExchangeLib"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/interface/IPriceProvider.sol": {
+      "lastModificationDate": 1707291645178,
+      "contentHash": "58bd1a0512522e8f4d5b0f604ade36af",
+      "sourceName": "contracts/interface/IPriceProvider.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "IPriceProvider"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/libs/TickState.sol": {
+      "lastModificationDate": 1707290674691,
+      "contentHash": "8cca14ed33ec5bf029c526b5dfffd272",
+      "sourceName": "contracts/libs/TickState.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/math/Math.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "TickState"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/contracts/utils/math/Math.sol": {
+      "lastModificationDate": 1707419177570,
+      "contentHash": "718fa8ba0ff269c92e364c1429d9de57",
+      "sourceName": "@openzeppelin/contracts/utils/math/Math.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Math"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/contracts/utils/math/SafeMath.sol": {
+      "lastModificationDate": 1707164111900,
+      "contentHash": "4c732a831e1da550e367f33bb0e77536",
+      "sourceName": "@openzeppelin/contracts/utils/math/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/CommissionManager.sol": {
+      "lastModificationDate": 1707292397654,
+      "contentHash": "378195bf5475646b1793ea6d4b31d097",
+      "sourceName": "contracts/CommissionManager.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "./Governance/Governed.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "CommissionManager"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Governance/Governed.sol": {
+      "lastModificationDate": 1707294165347,
+      "contentHash": "d756799217cfc1925bbc0f74a87ebd29",
+      "sourceName": "contracts/Governance/Governed.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IGovernor.sol",
+        "@openzeppelin/upgrades/contracts/Initializable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "Governed"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Token/OwnerBurnableToken.sol": {
+      "lastModificationDate": 1707299706615,
+      "contentHash": "a4ecbc06171d4ce7a290498f7aad112f",
+      "sourceName": "contracts/Token/OwnerBurnableToken.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "OwnerBurnableToken"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Token/DocToken.sol": {
+      "lastModificationDate": 1707299720664,
+      "contentHash": "5624ebe11bdae04de0338d6446a61f3b",
+      "sourceName": "contracts/Token/DocToken.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "./OwnerBurnableToken.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "DocToken"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Token/BProToken.sol": {
+      "lastModificationDate": 1707414908153,
+      "contentHash": "42948720af3172505aa1f11ff4404c34",
+      "sourceName": "contracts/Token/BProToken.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "BProToken"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/OrderIdGenerator.sol": {
+      "lastModificationDate": 1707298037825,
+      "contentHash": "985e60417523264ee02b07e0aad2de30",
+      "sourceName": "contracts/OrderIdGenerator.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "OrderIdGenerator"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Token/WRBTC.sol": {
+      "lastModificationDate": 1707300058551,
+      "contentHash": "48521c3f4ebcc3f58178b197df545ce2",
+      "sourceName": "contracts/Token/WRBTC.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "WRBTC"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/OrderListing.sol": {
+      "lastModificationDate": 1707472842550,
+      "contentHash": "36852c4aa6ad258840e9b0a1f18afae8",
+      "sourceName": "contracts/OrderListing.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/ReentrancyGuard.sol",
+        "./Stopper/Stoppable.sol",
+        "./OrderIdGenerator.sol",
+        "./CommissionManager.sol",
+        "./TokenPairConverter.sol",
+        "@openzeppelin/contracts/utils/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "EventfulOrderListing",
+        "OrderListing"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Stopper/Stoppable.sol": {
+      "lastModificationDate": 1707301283553,
+      "contentHash": "774ef856fd5c6261b6ca69694f7292ec",
+      "sourceName": "contracts/Stopper/Stoppable.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/Governed.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "Stoppable"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/TokenPairConverter.sol": {
+      "lastModificationDate": 1707339441459,
+      "contentHash": "c31a2a27052fbe3894074f25dfb6afff",
+      "sourceName": "contracts/TokenPairConverter.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./TokenPairListing.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "TokenPairConverter"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/TokenPairListing.sol": {
+      "lastModificationDate": 1707341271901,
+      "contentHash": "80be919bb2e7fb2a53e1ecdd9e8f6b64",
+      "sourceName": "contracts/TokenPairListing.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/IERC20.sol",
+        "./libs/MoCExchangeLib.sol",
+        "./libs/TickState.sol",
+        "./libs/MoCExchangeLib.sol",
+        "./ConfigurableTick.sol",
+        "./interface/IPriceProvider.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "EventfulTokenPairListing",
+        "TokenPairListing"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/ConfigurableTick.sol": {
+      "lastModificationDate": 1707302685997,
+      "contentHash": "9e95bae917d6a9a1422b31f944397274",
+      "sourceName": "contracts/ConfigurableTick.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Governance/Governed.sol",
+        "./libs/TickState.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "ConfigurableTick"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/RestrictiveOrderListing.sol": {
+      "lastModificationDate": 1707340217027,
+      "contentHash": "bdef4dfd1c58ca9202e056a0ed2c311c",
+      "sourceName": "contracts/RestrictiveOrderListing.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "./OrderListing.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "RestrictiveOrderListing"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/test/MocStateFake.sol": {
+      "lastModificationDate": 1707323292976,
+      "contentHash": "b14480f1836512b1504beb9f9a45f548",
+      "sourceName": "contracts/test/MocStateFake.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "../interface/IMocState.sol",
+        "../interface/IPriceProvider.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "MocStateFake"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/interface/IMocState.sol": {
+      "lastModificationDate": 1707323278642,
+      "contentHash": "a58d0db353c7a8a66a4ba2dc21ae6ab4",
+      "sourceName": "contracts/interface/IMocState.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "IMocState"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/test/TokenPriceProviderFake.sol": {
+      "lastModificationDate": 1707323180042,
+      "contentHash": "86ac55b22ab63693f84e52f090c0666e",
+      "sourceName": "contracts/test/TokenPriceProviderFake.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interface/IPriceProvider.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "TokenPriceProviderFake"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/price-providers/UnityPriceProvider.sol": {
+      "lastModificationDate": 1707329888823,
+      "contentHash": "e0aa7afc96e69f366e43c9bb88322939",
+      "sourceName": "contracts/price-providers/UnityPriceProvider.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interface/IPriceProvider.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "UnityPriceProvider"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/price-providers/TokenPriceProviderLastClosingPrice.sol": {
+      "lastModificationDate": 1707331200554,
+      "contentHash": "0ce648dbdae23ecf0bada33b2aca179b",
+      "sourceName": "contracts/price-providers/TokenPriceProviderLastClosingPrice.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interface/IPriceProvider.sol",
+        "../interface/IMoCDecentralizedExchange.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "TokenPriceProviderLastClosingPrice"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/interface/IMoCDecentralizedExchange.sol": {
+      "lastModificationDate": 1707331400751,
+      "contentHash": "77759165823c017b72022e593c07420e",
+      "sourceName": "contracts/interface/IMoCDecentralizedExchange.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "IMoCDecentralizedExchange"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/price-providers/PriceProviderFallback.sol": {
+      "lastModificationDate": 1707331441846,
+      "contentHash": "43aeef2a8bb35f9808cf63f682068a1a",
+      "sourceName": "contracts/price-providers/PriceProviderFallback.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interface/IPriceProvider.sol",
+        "../interface/IMoCDecentralizedExchange.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "PriceProviderFallback"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/price-providers/TexMocBtcPriceProviderFallback.sol": {
+      "lastModificationDate": 1707331186613,
+      "contentHash": "b9cc9f63044ae8cb2571827b453dd85f",
+      "sourceName": "contracts/price-providers/TexMocBtcPriceProviderFallback.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/math/Math.sol",
+        "./PriceProviderFallback.sol",
+        "../interface/IMocState.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "TexMocBtcPriceProviderFallback"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/test/TickStateFake.sol": {
+      "lastModificationDate": 1707323177177,
+      "contentHash": "b18b395194e62ef9dcb4dcf5aa8d278e",
+      "sourceName": "contracts/test/TickStateFake.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libs/TickState.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "TickStateFake"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/test/ERC20WithBlacklist.sol": {
+      "lastModificationDate": 1707323667282,
+      "contentHash": "a22c01d09d6d76f5fc24e90b64f09474",
+      "sourceName": "contracts/test/ERC20WithBlacklist.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "ERC20WithBlacklist"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Stopper/Stopper.sol": {
+      "lastModificationDate": 1707301328306,
+      "contentHash": "295cfcaa2877b485187c4042ddfc442d",
+      "sourceName": "contracts/Stopper/Stopper.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./Stoppable.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "GasPriceLimited",
+        "Stopper"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Token/TestToken.sol": {
+      "lastModificationDate": 1707300113375,
+      "contentHash": "71e3208ec6245a84242103a986a6981e",
+      "sourceName": "contracts/Token/TestToken.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "TestToken"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/MoCDecentralizedExchange.sol": {
+      "lastModificationDate": 1707478372294,
+      "contentHash": "72a9d96390c4de2b46f290891a5e7a5c",
+      "sourceName": "contracts/MoCDecentralizedExchange.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts/utils/math/Math.sol",
+        "./RestrictiveOrderListing.sol",
+        "./PartialExecution.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "EventfulExchange",
+        "MoCDecentralizedExchange"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/PartialExecution.sol": {
+      "lastModificationDate": 1707341693951,
+      "contentHash": "3c4944fef94d8a8756dd81b2b17f1d3f",
+      "sourceName": "contracts/PartialExecution.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./PartialExecutionLibrary.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "PartialExecution"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/PartialExecutionLibrary.sol": {
+      "lastModificationDate": 1707341867309,
+      "contentHash": "c5502b0e341a7a914bdd4705ad9feb48",
+      "sourceName": "contracts/PartialExecutionLibrary.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/utils/math/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "PartialExecutionLibrary"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/test/MoCDexFake.sol": {
+      "lastModificationDate": 1707478816652,
+      "contentHash": "bfd16e2d098dc15dc758d9a5ecf3eadc",
+      "sourceName": "contracts/test/MoCDexFake.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../MoCDecentralizedExchange.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MoCDexFake"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/price-providers/MocBproUsdPriceProviderFallback.sol": {
+      "lastModificationDate": 1707331085142,
+      "contentHash": "326a835d1558df9a0c4cbd3081675df4",
+      "sourceName": "contracts/price-providers/MocBproUsdPriceProviderFallback.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./PriceProviderFallback.sol",
+        "../interface/IMocState.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MocBproUsdPriceProviderFallback"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/price-providers/MocBproBtcPriceProviderFallback.sol": {
+      "lastModificationDate": 1707331047709,
+      "contentHash": "49ccdb770ba9f41d844975f11b25a96e",
+      "sourceName": "contracts/price-providers/MocBproBtcPriceProviderFallback.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./PriceProviderFallback.sol",
+        "../interface/IMocState.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MocBproBtcPriceProviderFallback"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/price-providers/MocRiskProUsdPriceProviderFallback.sol": {
+      "lastModificationDate": 1707331102328,
+      "contentHash": "e326ef05ec72d5828a7f47ccdf3f506b",
+      "sourceName": "contracts/price-providers/MocRiskProUsdPriceProviderFallback.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./PriceProviderFallback.sol",
+        "../interface/IRRC20State.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MocRiskProUsdPriceProviderFallback"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/interface/IRRC20State.sol": {
+      "lastModificationDate": 1707329567293,
+      "contentHash": "c31e7fa91b4f5830ae4799af35d91890",
+      "sourceName": "contracts/interface/IRRC20State.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "IRRC20State"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/price-providers/MocRiskProReservePriceProviderFallback.sol": {
+      "lastModificationDate": 1707331094023,
+      "contentHash": "21b07951b149580247d26e009fceb49e",
+      "sourceName": "contracts/price-providers/MocRiskProReservePriceProviderFallback.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./PriceProviderFallback.sol",
+        "../interface/IRRC20State.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MocRiskProReservePriceProviderFallback"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/price-providers/ExternalOraclePriceProviderFallback.sol": {
+      "lastModificationDate": 1707330853039,
+      "contentHash": "d812c5dcaf5b6e26dde9ee00c8b5693e",
+      "sourceName": "contracts/price-providers/ExternalOraclePriceProviderFallback.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./PriceProviderFallback.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "ExternalOraclePriceProviderFallback"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Migrations.sol": {
+      "lastModificationDate": 1707327757152,
+      "contentHash": "1a1de1cf2684e1333595c5d2452403dc",
+      "sourceName": "contracts/Migrations.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "Migrations"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/upgrades/contracts/upgradeability/AdminUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1707420476649,
+      "contentHash": "61e0c77dce0b5ad58dcc3d78b11fe76c",
+      "sourceName": "@openzeppelin/upgrades/contracts/upgradeability/AdminUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BaseAdminUpgradeabilityProxy.sol",
+        "./BaseAdminUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "AdminUpgradeabilityProxy"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/upgrades/contracts/ownership/Ownable.sol": {
+      "lastModificationDate": 1707420556001,
+      "contentHash": "028c02bfaa8e6448be88aa0007ff97f1",
+      "sourceName": "@openzeppelin/upgrades/contracts/ownership/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "OpenZeppelinUpgradesOwnable"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1707420476650,
+      "contentHash": "18d3412c4aa1c9553cb3422de97512c0",
+      "sourceName": "@openzeppelin/upgrades/contracts/upgradeability/BaseAdminUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./UpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "BaseAdminUpgradeabilityProxy"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol": {
+      "lastModificationDate": 1707420476653,
+      "contentHash": "14af03301e750dfa1345a0cec4d199c9",
+      "sourceName": "@openzeppelin/upgrades/contracts/upgradeability/UpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./BaseUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "UpgradeabilityProxy"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol": {
+      "lastModificationDate": 1707420476650,
+      "contentHash": "54aa51c3b216371582ec4506fd96a5da",
+      "sourceName": "@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./Proxy.sol",
+        "../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "BaseUpgradeabilityProxy"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/upgrades/contracts/utils/Address.sol": {
+      "lastModificationDate": 1707420016821,
+      "contentHash": "7372366b3bce75c72692e6b209d8f69d",
+      "sourceName": "@openzeppelin/upgrades/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.17"
+      ],
+      "artifacts": [
+        "OpenZeppelinUpgradesAddress"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/upgrades/contracts/upgradeability/Proxy.sol": {
+      "lastModificationDate": 1707384622217,
+      "contentHash": "9d7f6b787e893ee89ef3526333a3b2d4",
+      "sourceName": "@openzeppelin/upgrades/contracts/upgradeability/Proxy.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "Proxy"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/test/MockGovernor.sol": {
+      "lastModificationDate": 1707323337030,
+      "contentHash": "b7b726ffab82c0d925e78f3ebb178941",
+      "sourceName": "contracts/test/MockGovernor.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MockGovernor"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/test/MockStopper.sol": {
+      "lastModificationDate": 1707323393249,
+      "contentHash": "e478b964cb1bd75fd49b72975c39846c",
+      "sourceName": "contracts/test/MockStopper.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MockStopper"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/test/MockUpgradeDelegator.sol": {
+      "lastModificationDate": 1707323320944,
+      "contentHash": "a040d4e076f8bdc8d2912ea5e12cec06",
+      "sourceName": "contracts/test/MockUpgradeDelegator.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "MockUpgradeDelegator"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Upgradeability/BlockableUpgradeDelegator.sol": {
+      "lastModificationDate": 1707469726912,
+      "contentHash": "fe86e0fc37f150d9f568dc3416d901d8",
+      "sourceName": "contracts/Upgradeability/BlockableUpgradeDelegator.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/upgrades/contracts/upgradeability/AdminUpgradeabilityProxy.sol",
+        "@openzeppelin/upgrades/contracts/upgradeability/ProxyAdmin.sol",
+        "../Blockability/Blockable.sol",
+        "./UpgradeDelegator.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "BlockableUpgradeDelegator"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/Upgradeability/UpgradeDelegator.sol": {
+      "lastModificationDate": 1707469890546,
+      "contentHash": "79e9043ee675112c3122a1963caa5dad",
+      "sourceName": "contracts/Upgradeability/UpgradeDelegator.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/upgrades/contracts/upgradeability/AdminUpgradeabilityProxy.sol",
+        "@openzeppelin/upgrades/contracts/upgradeability/ProxyAdmin.sol",
+        "../Governance/Governed.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "UpgradeDelegator"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/node_modules/@openzeppelin/upgrades/contracts/upgradeability/ProxyAdmin.sol": {
+      "lastModificationDate": 1707420476653,
+      "contentHash": "533c814f89f241bc40eeb1e1c3a58352",
+      "sourceName": "@openzeppelin/upgrades/contracts/upgradeability/ProxyAdmin.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../ownership/Ownable.sol",
+        "./AdminUpgradeabilityProxy.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.9"
+      ],
+      "artifacts": [
+        "ProxyAdmin"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/TokenPairEnabler.sol": {
+      "lastModificationDate": 1707470544815,
+      "contentHash": "9478d862aa0d8659683c5efa59ab5b7c",
+      "sourceName": "contracts/changers/TokenPairEnabler.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../TokenPairListing.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "TokenPairEnabler"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/TokenPairDisabler.sol": {
+      "lastModificationDate": 1707470550868,
+      "contentHash": "2e417aeadac8f1367594d5c99bfd1213",
+      "sourceName": "contracts/changers/TokenPairDisabler.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../TokenPairListing.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "TokenPairDisabler"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/SmoothingFactorChanger.sol": {
+      "lastModificationDate": 1707470555866,
+      "contentHash": "925f05ae7c76f2bbf95b6d4aaab9eac8",
+      "sourceName": "contracts/changers/SmoothingFactorChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../TokenPairListing.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "SmoothingFactorChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/PriceProviderChanger.sol": {
+      "lastModificationDate": 1707470560422,
+      "contentHash": "ae491697faecf21632c15dfdc7cc22e9",
+      "sourceName": "contracts/changers/PriceProviderChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../TokenPairListing.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "PriceProviderChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/MinimumCommissionChanger.sol": {
+      "lastModificationDate": 1707470569408,
+      "contentHash": "2bf7c62283622b2a9b7b3425e6b7f2d6",
+      "sourceName": "contracts/changers/MinimumCommissionChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../CommissionManager.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "MinimumCommissionChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/ExpirationPenaltyRateChanger.sol": {
+      "lastModificationDate": 1707470598450,
+      "contentHash": "b00b201d0665ad4990e2880b30483e8c",
+      "sourceName": "contracts/changers/ExpirationPenaltyRateChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../CommissionManager.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "ExpirationPenaltyRateChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/CommissionRateChanger.sol": {
+      "lastModificationDate": 1707470614243,
+      "contentHash": "439bc194440b0aa8043c8ed87bca3abc",
+      "sourceName": "contracts/changers/CommissionRateChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../CommissionManager.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "CommissionRateChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/CancelationPenaltyRateChanger.sol": {
+      "lastModificationDate": 1707470620704,
+      "contentHash": "27e7a2141023e991deb61badc6cc80f1",
+      "sourceName": "contracts/changers/CancelationPenaltyRateChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../CommissionManager.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "CancelationPenaltyRateChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/BeneficiaryAddressChanger.sol": {
+      "lastModificationDate": 1707470627314,
+      "contentHash": "729c636ffa322a857e9bda1896ab3dae",
+      "sourceName": "contracts/changers/BeneficiaryAddressChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../CommissionManager.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "BeneficiaryAddressChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/MinOrderAmountChanger.sol": {
+      "lastModificationDate": 1707470564375,
+      "contentHash": "f78e77acd7afaf22c10ac0a1d4b3aeac",
+      "sourceName": "contracts/changers/MinOrderAmountChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../RestrictiveOrderListing.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "MinOrderAmountChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/MaxOrderLifespanChanger.sol": {
+      "lastModificationDate": 1707470577876,
+      "contentHash": "7e13fa5aea1ac04f41bd94276429c902",
+      "sourceName": "contracts/changers/MaxOrderLifespanChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../RestrictiveOrderListing.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "MaxOrderLifespanChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/MarketOrderSettingsChanger.sol": {
+      "lastModificationDate": 1707470587949,
+      "contentHash": "18ee3cfe291a5a780bcd7be6783d9a9c",
+      "sourceName": "contracts/changers/MarketOrderSettingsChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../RestrictiveOrderListing.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "MarketOrderSettingsChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/AddTokenPairChanger.sol": {
+      "lastModificationDate": 1707472861625,
+      "contentHash": "7100455dcc1a3969413e5874be3f338c",
+      "sourceName": "contracts/changers/AddTokenPairChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../MoCDecentralizedExchange.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "AddTokenPairChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/MinBlocksForTickChanger.sol": {
+      "lastModificationDate": 1707470573923,
+      "contentHash": "49945d8c2cfefc3c9866aeb67aca1a4e",
+      "sourceName": "contracts/changers/MinBlocksForTickChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../TokenPairListing.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "MinBlocksForTickChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/MaxBlocksForTickChanger.sol": {
+      "lastModificationDate": 1707470582752,
+      "contentHash": "66a968130041d2786e8920b98c6df2d8",
+      "sourceName": "contracts/changers/MaxBlocksForTickChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../TokenPairListing.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "MaxBlocksForTickChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/LastClosingPriceChanger.sol": {
+      "lastModificationDate": 1707470594192,
+      "contentHash": "1bda02b6cde8225b9b84022af6617542",
+      "sourceName": "contracts/changers/LastClosingPriceChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../TokenPairListing.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "LastClosingPriceChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/ExpectedOrdersForTickChanger.sol": {
+      "lastModificationDate": 1707470602522,
+      "contentHash": "c076a548011705a4bd990dd86adb3744",
+      "sourceName": "contracts/changers/ExpectedOrdersForTickChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../TokenPairListing.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "ExpectedOrdersForTickChanger"
+      ]
+    },
+    "/Users/divmarley/Desktop/swap/contracts/changers/EMAPriceChanger.sol": {
+      "lastModificationDate": 1707470609841,
+      "contentHash": "d1007211d6ad6d3cbc0cf90888318e9f",
+      "sourceName": "contracts/changers/EMAPriceChanger.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../Governance/ChangeContract.sol",
+        "../TokenPairListing.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.22 <0.9.0"
+      ],
+      "artifacts": [
+        "EmaPriceChanger"
+      ]
+    }
+  }
+}

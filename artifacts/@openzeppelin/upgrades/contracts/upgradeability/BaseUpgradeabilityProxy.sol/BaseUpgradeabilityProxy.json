@@ -1,0 +1,41 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "BaseUpgradeabilityProxy",
+  "sourceName": "@openzeppelin/upgrades/contracts/upgradeability/BaseUpgradeabilityProxy.sol",
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "implementation",
+          "type": "address"
+        }
+      ],
+      "name": "Upgraded",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "_implementation",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "impl",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "stateMutability": "payable",
+      "type": "receive"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b50610103806100206000396000f3fe60806040526004361060205760003560e01c806359679b0f14603157600080fd5b36602c57602a607b565b005b600080fd5b348015603c57600080fd5b507f360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc546040516001600160a01b03909116815260200160405180910390f35b60a860a47f360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc5490565b60aa565b565b3660008037600080366000845af43d6000803e80801560c8573d6000f35b3d6000fdfea26469706673582212206e468d5af9f9291b9554d2235cf3a9dd0c12552a111ff69b58a97488dfc7652e64736f6c63430008180033",
+  "deployedBytecode": "0x60806040526004361060205760003560e01c806359679b0f14603157600080fd5b36602c57602a607b565b005b600080fd5b348015603c57600080fd5b507f360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc546040516001600160a01b03909116815260200160405180910390f35b60a860a47f360894a13ba1a3210667c828492db98dca3e2076cc3735a920a3ca505d382bbc5490565b60aa565b565b3660008037600080366000845af43d6000803e80801560c8573d6000f35b3d6000fdfea26469706673582212206e468d5af9f9291b9554d2235cf3a9dd0c12552a111ff69b58a97488dfc7652e64736f6c63430008180033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

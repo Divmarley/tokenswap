@@ -1,0 +1,96 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "EmaPriceChanger",
+  "sourceName": "contracts/changers/EMAPriceChanger.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "contract TokenPairListing",
+          "name": "_tokenPairListing",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_baseToken",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "_secondaryToken",
+          "type": "address"
+        },
+        {
+          "internalType": "uint256",
+          "name": "_emaPrice",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "inputs": [],
+      "name": "baseToken",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "emaPrice",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "execute",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "secondaryToken",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "tokenPairListing",
+      "outputs": [
+        {
+          "internalType": "contract TokenPairListing",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060405161026c38038061026c83398101604081905261002f9161008c565b600080546001600160a01b03199081166001600160a01b03968716179091556001805482169486169490941790935560028054909316919093161790556003556100df565b6001600160a01b038116811461008957600080fd5b50565b600080600080608085870312156100a257600080fd5b84516100ad81610074565b60208601519094506100be81610074565b60408601519093506100cf81610074565b6060959095015193969295505050565b61017e806100ee6000396000f3fe608060405234801561001057600080fd5b50600436106100575760003560e01c806333fe4f751461005c578063614619541461008c578063ae34031d14610096578063c55dae63146100ad578063f4eb08db146100c0575b600080fd5b60005461006f906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6100946100d3565b005b61009f60035481565b604051908152602001610083565b60015461006f906001600160a01b031681565b60025461006f906001600160a01b031681565b60005460015460025460035460405162cf33cd60e61b81526001600160a01b039384166004820152918316602483015260448201529116906333ccf34090606401600060405180830381600087803b15801561012e57600080fd5b505af1158015610142573d6000803e3d6000fd5b5050505056fea26469706673582212201ff399f87d93ba7181cff08f745d69f5284c129336c1e7493551b314c487f04b64736f6c63430008180033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100575760003560e01c806333fe4f751461005c578063614619541461008c578063ae34031d14610096578063c55dae63146100ad578063f4eb08db146100c0575b600080fd5b60005461006f906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6100946100d3565b005b61009f60035481565b604051908152602001610083565b60015461006f906001600160a01b031681565b60025461006f906001600160a01b031681565b60005460015460025460035460405162cf33cd60e61b81526001600160a01b039384166004820152918316602483015260448201529116906333ccf34090606401600060405180830381600087803b15801561012e57600080fd5b505af1158015610142573d6000803e3d6000fd5b5050505056fea26469706673582212201ff399f87d93ba7181cff08f745d69f5284c129336c1e7493551b314c487f04b64736f6c63430008180033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

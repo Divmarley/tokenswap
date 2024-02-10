@@ -1,0 +1,45 @@
+{
+  "name": "swap",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": { 
+    "test": "rm -rf build && npm run truffle-compile && scripts/test.sh",
+    "fast-test": "truffle test",
+    "debugtx": "./scripts/debugtx $1",
+    "eslint": "eslint ./ --ext .js",
+    "eslint-fix": "./node_modules/.bin/eslint ./ --ext .js --fix",
+    "truffle-test": "./node_modules/truffle/build/cli.bundled.js test",
+    "truffle-contract-size": "./node_modules/truffle/build/cli.bundled.js run contract-size",
+    "coverage": "SOLIDITY_COVERAGE=true npm run test",
+    "solium": "solium -d contracts/",
+    "ganache-cli": "scripts/run_ganache.sh",
+    "block-utils": "scripts/mine_blocks.sh",
+    "truffle-compile": "truffle compile --all",
+    "truffle-migrate-testnet": "cp zos.backup.json zos.json && truffle migrate --network rskTestnet --reset",
+    "truffle-migrate-mainnet": "cp zos.backup.json zos.json && truffle migrate --network rskMainnet --reset",
+    "truffle-migrate-dev": "rm zos.dev-*.json; rm -r build/contracts; truffle migrate --network development --reset",
+    "full-test": "npm run eslint && npm run solium && npm run test",
+    "pretty-sc": "prettier --write **/*.sol",
+    "flatten-contracts": "scripts/contract_flattener.sh"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomicfoundation/hardhat-ethers": "^3.0.5",
+    "@openzeppelin/test-helpers": "^0.5.16",
+    "ethers": "^6.10.0",
+    "hardhat": "^2.19.5",
+    "truffle-hdwallet-provider": "^1.0.0-web3one.5"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^5.0.1",
+    "@openzeppelin/truffle-upgrades": "^1.21.0",
+    "@openzeppelin/upgrades": "^2.8.0",
+    "openzeppelin-solidity": "^2.5.1",
+    "solc": "^0.4.15",
+    "zip": "^1.2.0",
+    "zop": "^0.0.0"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "development": {
+    "dex": "0xDA3E9304d77c2270a570472232c5c61c6cAA4499",
+    "doc": "0x4D37525ecc02BD6280Aa564D9142F04CBFe63d86",
+    "wrbtc": "0x3153a3832F051083f666aE4FFF2AABDbd104C300",
+    "test": "0xFebe659a4047C37FF9BB8F7E9FE646b35cF51b4c",
+    "bpro": "0x56Ec968f7Ce4F5DA7834427266F5947d1655e8F9",
+    "proxyAdmin": "0x8DD912C4518783a8dEbbDf10162f42f62B3cc500",
+    "upgradeDelegator": "0x52A036a857B29ED53c69d51625c25359509c51b6",
+    "governor": "0xE554b977E6681aF61B79410E06a4B0D06A4975B4",
+    "stopper": "0xE7c4673C28fDcbA0Ad9755476198F245Fc22AD14",
+    "commissionManager": "0xe7757192Fa571A7A3731EeaE0cfa36bC72B97c70"
+  },
+  "rskTestnet": {
+    "dex": ""
+  }
+}
