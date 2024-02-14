@@ -14,4 +14,8 @@ contract TestToken is ERC20 {
 
   //Fallback
   // function() external {}
+
+    function mint(address to, uint256 amount) public {
+        _mint(to, amount);
+    }
 }

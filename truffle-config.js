@@ -39,11 +39,16 @@
  * More details can be found at 🔎:
  *
  * https://trufflesuite.com/docs/truffle/getting-started/using-the-truffle-dashboard/
+ *
+ * @format
  */
 
-// require('dotenv').config();
-// const { MNEMONIC, PROJECT_ID } = process.env;
-
+require('dotenv').config();
+const { MNEMONIC, PROJECT_ID } = process.env;
+const endpointUrl =
+  'https://holy-clean-resonance.ethereum-sepolia.quiknode.pro/b5ccb3c734b159fe7f58d41b914b0dbc1a5402d9/';
+const privateKey =
+  '96ea8f6ce6602ca3d0570d46ee522412782502000084143ea955ae245bd3802c';
 // const HDWalletProvider = require('@truffle/hdwallet-provider');
 
 module.exports = {
@@ -65,10 +70,15 @@ module.exports = {
     // options below to some value.
     //
     development: {
-     host: "127.0.0.1",     // Localhost (default: none)
-     port: 8545,            // Standard Ethereum port (default: none)
-     network_id: "*",       // Any network (default: none)
+      host: '127.0.0.1', // Localhost (default: none)
+      port: 8545, // Standard Ethereum port (default: none)
+      network_id: '*', // Any network (default: none)
     },
+ 
+      sepolia: {
+        url: endpointUrl,
+        accounts: [privateKey],
+      }, 
     //
     // An additional network, but with some advanced options…
     // advanced: {
@@ -111,17 +121,17 @@ module.exports = {
       settings: {
         optimizer: {
           enabled: true,
-          runs: 100
-        }
-      }
-    }
+          runs: 100,
+        },
+      },
+    },
   },
   coverage: {
     host: 'localhost',
     network_id: '*', // eslint-disable-line camelcase
     port: 8555,
     gas: 0xfffffffffff,
-    gasPrice: 0x01
+    gasPrice: 0x01,
   },
   // rskTestnet: {
   //   host: 'https://public-node.testnet.rsk.co',
@@ -141,7 +151,6 @@ module.exports = {
   //   skipDryRun: true,
   //   confirmations: 1
   // }
-
 
   // Truffle DB is currently disabled by default; to enable it, change enabled:
   // false to enabled: true. The default storage location can also be

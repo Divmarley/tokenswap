@@ -4,6 +4,7 @@ Only run the first time to install brownie connections in your machine
 
 from moneyonchain.networks import NetworkManager
 
+
 connection_network = 'rskTesnetPublic'
 config_network = 'dexTestnet'
 

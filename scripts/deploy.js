@@ -1,21 +1,27 @@
 /** @format */
-const { upgradeProxy } = require('@openzeppelin/upgrades');
+
+const { BigNumber } = require('ethers');
+const { ethers } = require('hardhat');
+const { chunk } = require('lodash');
+
 async function main() {
+  const [deployer] = await ethers.getSigners();
 
-  // const upgradedInstance = await upgradeProxy(proxyAddress, NewImplementation, { deployer });
-  // We get the contract to deploy
-  // const Note = await ethers.getContractFactory('Note');
-  // const [deployer] = await ethers.getSigners();
-  // console.log('Deploying Note...');
-  // const note = await Note.deploy(14);
-  // await box.deployed();
-  // console.log('Box deployed to:', note.target);
-//   const upgradedInstance = await upgradeProxy(proxyAddress, NewImplementation, { deployer });
-// console.log(upgradedInstance);  
-  // const Token = await ethers.getContractFactory('Token');
-  // const token = await Token.deploy();
+ console.log("Deploying contracts with the account:", deployer.address);
 
-  // console.log('MyToken address:', token.target);
+  // // Deploy the MoCExchangeLib library
+  // const MoCExchangeLib = await ethers.getContracctFactory("MoCExchangeLib");
+  // const mocExchangeLib = await MoCExchangeLib.deploy();
+
+  // // Deploy the MoCDecentralizedExchange contract and link the library
+  // const MoCDecentralizedExchange = await ethers.getContractFactory("MoCDecentralizedExchange", {
+  //   libraries: {
+  //     MoCExchangeLib: mocExchangeLib.address
+  //   }
+  // });
+  // const mocDecentralizedExchange = await MoCDecentralizedExchange.deploy();
+
+  // console.log("Contracts deployed successfully!");
 }
 
 main()

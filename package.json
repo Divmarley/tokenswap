@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": { 
+  "scripts": {
     "test": "rm -rf build && npm run truffle-compile && scripts/test.sh",
     "fast-test": "truffle test",
     "debugtx": "./scripts/debugtx $1",
@@ -29,16 +29,22 @@
   "devDependencies": {
     "@nomicfoundation/hardhat-ethers": "^3.0.5",
     "@openzeppelin/test-helpers": "^0.5.16",
-    "ethers": "^6.10.0",
+    "ethers": "^6.11.0",
     "hardhat": "^2.19.5",
     "truffle-hdwallet-provider": "^1.0.0-web3one.5"
   },
   "dependencies": {
     "@openzeppelin/contracts": "^5.0.1",
+    "@openzeppelin/contracts-upgradeable": "^5.0.1",
     "@openzeppelin/truffle-upgrades": "^1.21.0",
     "@openzeppelin/upgrades": "^2.8.0",
+    "abi-decoder": "^2.4.0",
+    "bn-chai": "^1.0.1",
+    "dotenv": "^16.4.4",
     "openzeppelin-solidity": "^2.5.1",
+    "openzeppelin-test-helpers": "^0.5.1",
     "solc": "^0.4.15",
+    "truffle": "^5.11.5",
     "zip": "^1.2.0",
     "zop": "^0.0.0"
   }

@@ -43,8 +43,8 @@ else
   start_ganache
 fi
 
-ganache-cli --version
-truffle version
+npx ganache-cli --version
+npx truffle version
 
 if [ "$SOLIDITY_COVERAGE" = true ]; then
   node_modules/.bin/solidity-coverage

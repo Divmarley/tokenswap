@@ -1,0 +1,18 @@
+{
+    "networks": {
+      "rskTesnetPublic": {
+        "host": "https://public-node.testnet.rsk.co",
+        "chainid": 31,
+        "gas_limit": 7000000
+      },
+      "dexTestnet": {
+        "gas_limit": 8000000,
+        "accounts": {
+          "count": 10,
+          "initial_balance": "1000 ether"
+        }
+      }
+    },
+    "active_network": "rskTesnetPublic"
+  }
+ 

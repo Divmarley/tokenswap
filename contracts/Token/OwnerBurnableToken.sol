@@ -9,12 +9,11 @@ import "@openzeppelin/contracts/access/Ownable.sol";
    @title Owner Burnable Token
    @dev Token that allows the owner to irreversibly burned (destroyed) any token.
  */
-contract OwnerBurnableToken is Ownable {
-  constructor() Ownable(msg.sender){}
-  /**
-     @dev Burns a specific amount of tokens for the address.
-     @param who who's tokens are gona be burned
-     @param value The amount of token to be burned.
-   */
+contract OwnerBurnableToken is ERC20,Ownable {
+  constructor() ERC20("OwnerBurnableToken", "ow") Ownable(msg.sender){}
+  
+    function mint(address to, uint256 amount) public {
+        _mint(to, amount);
+    }
    
 }

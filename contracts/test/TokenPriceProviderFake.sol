@@ -6,7 +6,7 @@ contract TokenPriceProviderFake is IPriceProvider {
   bytes32 tokenPrice;
   bool has;
 
-  constructor() public {
+  constructor()  {
     tokenPrice = bytes32(uint256(2 * 10**18));
     has = true;
   }
