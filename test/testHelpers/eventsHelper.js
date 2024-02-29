@@ -2,7 +2,7 @@ const abiDecoder = require('abi-decoder');
 
 const MoCDecentralizedExchange = artifacts.require('./contracts/MoCDecentralizedExchange.sol');
 const ERC20Token = artifacts.require(
-  'openzeppelin-solidity/contracts/token/ERC20/ERC20Detailed.sol'
+  '@openzeppelin/contracts/token/ERC20/ERC20.sol'
 );
 
 abiDecoder.addABI(MoCDecentralizedExchange.abi);

@@ -34,8 +34,8 @@ network_manager.connect()
 # instantiate DEX Contract
 dex = MoCDecentralizedExchange(network_manager).from_abi()
 
-base_token = '0xCB46c0ddc60D18eFEB0E586C17Af6ea36452Dae0'  # DOC Token address
-secondary_token = '0x09b6ca5E4496238A1F176aEa6Bb607DB96c2286E'  # WRBTC Token address
+base_token = '0x37AF2A2DBf0b1C2BCA240723927494da6dC49278'  # DOC Token address
+secondary_token = '0x2fD9479eBB25B7b67d02c0638DCb2C8e15357A0D'  # WRBTC Token address
 
 token_status = dex.token_pairs_status(base_token, secondary_token)
 print("Token Status")

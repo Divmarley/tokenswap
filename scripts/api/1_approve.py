@@ -28,9 +28,9 @@ network_manager = NetworkManager(
 # Connect to network
 network_manager.connect()
 
-account = '0xCD8A1c9aCc980ae031456573e34dC05cD7daE6e3'  # the account you want to allow
-tex_address = '0xA066d6e20e122deB1139FA3Ae3e96d04578c67B5'  # the tex address
-token_address = '0x09b6ca5E4496238A1F176aEa6Bb607DB96c2286E'  # token address
+account = '0x7774954e0fb2260fbAd73244B25496879a88C50b'  # the account you want to allow
+tex_address = '0x7774954e0fb2260fbAd73244B25496879a88C50b'  # the tex address
+token_address = '0xc0eE7F4A0C90c9D9A8C9aEd0571AdFEb2E387fbC'  # token address
 amount_allow = 0.001  # the amount you want to allow
 
 token_wrbtc = WRBTCToken(network_manager, contract_address=token_address).from_abi()

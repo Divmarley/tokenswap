@@ -120,7 +120,8 @@ const deployPriceProvider = (
 
 module.exports = async function (deployer, network, [owner]) {
   const deployFakes = network === 'development' || network === 'coverage';
-  console.log('Deploying fakes?', deployFakes);
+  console.log('Deploying fakes?', network,deployFakes);
+
 
   const config = Object.assign(
     {},
@@ -130,7 +131,8 @@ module.exports = async function (deployer, network, [owner]) {
   );
   const { existingTokens } = config;
   const addresses = config.addressesToHaveBalance || [];
-  addresses.push(owner);
+  addresses.push(owner); 
+  console.log({owner});
   const {
     MAX_PENDING_TXS,
     ORDERS_FOR_TICK,
@@ -323,13 +325,16 @@ module.exports = async function (deployer, network, [owner]) {
   if (deployFakes) {
     console.log('Creating fake dex proxy');
     // await createDexProxy('MoCDexFake', options, params);
+ 
     console.log('Settings admin to fake dex');
     // await setAdmin({ newAdmin: proxyAdmin.address, contractAlias: 'MoCDexFake', ...options });
   }
 
   console.log('Transferring ownership from dex to owner');
-  // await commissionManager.transferOwnership(dexProxy.address, { from: owner });
-
+  console.log("owner",owner);
+  
+  await commissionManager.transferOwnership(admin.address, { from: owner });
+ 
   // console.log('Getting contracts', dexProxy.address);
   // deployer.deploy returns undefined. This is not documented in
   //   // https://www.trufflesuite.com/docs/truffle/getting-started/running-migrations
@@ -354,7 +359,7 @@ module.exports = async function (deployer, network, [owner]) {
  
   // Deploy other contracts similarly if needed 
   console.log('Deploying upgradeDelegator and admin');
-  // // // Deploy upgradeDelegator and admin similarly if needed
+  // Deploy upgradeDelegator and admin similarly if needed
   console.log('Transfering ownership');
   await admin.transferOwnership(myUpgradeDelegator.address);
 
@@ -485,6 +490,9 @@ module.exports = async function (deployer, network, [owner]) {
       )
     );
   } 
+
+
+  // console.log(dex);
 
 
   console.log(

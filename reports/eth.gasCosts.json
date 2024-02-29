@@ -1,0 +1,17 @@
+{
+  "metadata": {
+    "eth": {
+      "gasUnit": "gas",
+      "gasPrice": 22000000000,
+      "usdPrice": 180,
+      "gasLimit": 8000000
+    },
+    "rsk": {
+      "gasUnit": "gas",
+      "gasPrice": 65000000,
+      "usdPrice": 10000,
+      "gasLimit": 6800000
+    }
+  },
+  "testCases": {}
+}

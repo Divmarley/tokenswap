@@ -38,6 +38,7 @@
     "@openzeppelin/contracts-upgradeable": "^5.0.1",
     "@openzeppelin/truffle-upgrades": "^1.21.0",
     "@openzeppelin/upgrades": "^2.8.0",
+    "@truffle/hdwallet-provider": "^2.1.15",
     "abi-decoder": "^2.4.0",
     "bn-chai": "^1.0.1",
     "dotenv": "^16.4.4",

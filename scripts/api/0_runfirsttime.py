@@ -13,9 +13,10 @@ config_network = 'dexTestnet'
 # config network is our enviroment we want to connect
 network_manager = NetworkManager(
     connection_network=connection_network,
-    config_network=config_network)
-
+    config_network=config_network
+)
+ 
 # run install() if is the first time and you want to install
-# networks connection from brownie
+# networks connection from brownie 
 network_manager.install()
 

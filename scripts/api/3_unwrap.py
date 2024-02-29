@@ -29,7 +29,7 @@ network_manager = NetworkManager(
 # Connect to network
 network_manager.connect()
 
-token_address = '0x09b6ca5E4496238A1F176aEa6Bb607DB96c2286E'  # token address
+token_address = '0x4a9bC8bf3e39159E6AAbd812b41CBAe4c53554Df'  # token address
 amount_to_unwrap = Decimal(0.001)  # the amount you want to wrap
 
 token_sc = WRBTCToken(network_manager, contract_address=token_address).from_abi()

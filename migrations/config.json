@@ -1,5 +1,4 @@
 {
-  
   "rskTestnet": {
     "deployGovernance": false,
     "haveToAddTokenPairs": false,

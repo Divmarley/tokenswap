@@ -16,7 +16,7 @@ contract ExternalOraclePriceProviderFallback is PriceProviderFallback {
     IMoCDecentralizedExchange _dex,
     address _baseToken,
     address _secondaryToken
-  ) public PriceProviderFallback(_dex, _baseToken, _secondaryToken) {
+  )  PriceProviderFallback(_dex, _baseToken, _secondaryToken) {
     externalPriceProvider = _externalPriceProvider;
   }
 

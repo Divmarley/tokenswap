@@ -29,7 +29,7 @@ network_manager.connect()
 
 # instantiate DEX Contract
 dex = MoCDecentralizedExchange(network_manager).from_abi()
-
+print(dex)
 is_paused = dex.paused()
 print("Is paused: {0}".format(is_paused))
 

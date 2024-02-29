@@ -15,9 +15,23 @@ module.exports = {
   },
   networks: {
     sepolia: {
-      url: endpointUrl,
-      accounts: [privateKey],
-    },
+      provider: () => new HDWalletProvider({
+      mnemonic: {
+      phrase: "Adjust the gas limit as per your requirements"
+      },
+      providerOrUrl: endpointUrl
+      }),
+      network_id: 11155111, // Sepolia's network ID
+      gas: 4000000, // Adjust the gas limit as per your requirements
+      gasPrice: 10000000000, // Set the gas price to an appropriate value
+      confirmations: 2, // Set the number of confirmations needed for a transaction
+      timeoutBlocks: 200, // Set the timeout for transactions
+      skipDryRun: true // Skip the dry run option
+     }
+    // sepolia: {
+    //   url: endpointUrl,
+    //   accounts: [privateKey],
+    // },
     // development: {
     //   host: '127.0.0.1',
     //   port: 8545,
